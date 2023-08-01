@@ -51,7 +51,6 @@ public class Programa {
 		}
 
 		System.out.println();
-		ProdutoImportado pi = new ProdutoImportado();
 		System.out.println("Etiqueta de Preços:");
 		for (Produto l : lista) {
 			System.out.println(l.etiquetadepreço());
