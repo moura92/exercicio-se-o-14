@@ -2,8 +2,8 @@ package entidades;
 
 public class Produto {
 
-	protected String nome;
-	protected Double preço;
+	private String nome;
+	private Double preço;
 	
 	public Produto() {
 	}

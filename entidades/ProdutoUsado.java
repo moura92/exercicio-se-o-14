@@ -26,6 +26,6 @@ public class ProdutoUsado extends Produto{
 	
 	@Override
 	public String etiquetadepreço() {
-		return nome + " (Usado) R$ " + preço + " (Data de Fabricação: " + sdf.format(datafabricação) + ")";
+		return getNome() + " (Usado) R$ " + String.format("%.2f", getPreço()) + " (Data de Fabricação: " + sdf.format(datafabricação) + ")";
 	}
 }

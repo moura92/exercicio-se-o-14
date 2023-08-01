@@ -22,11 +22,11 @@ public class ProdutoImportado extends Produto{
 	
 	@Override
 	public String etiquetadepreço() {
-		return nome + " R$ " + preçototal() + " (Taxa: R$ " + String.format("%.2f", taxaalfandega) + ")";
+		return getNome() + " R$ " + preçototal() + " (Taxa: R$ " + String.format("%.2f", taxaalfandega) + ")";
 	}
 	
 	public Double preçototal() {
-		return preço + taxaalfandega;
+		return getPreço() + taxaalfandega;
 	}
 	
 	
