@@ -3,8 +3,8 @@ package entidades;
 public abstract class Contribuinte {
 
 	private String nome;
-	private Double rendaanual;
-	
+	protected Double rendaanual;
+
 	public Contribuinte() {
 		super();
 	}
@@ -30,6 +30,6 @@ public abstract class Contribuinte {
 	public void setRendaanual(Double rendaanual) {
 		this.rendaanual = rendaanual;
 	}
-	
+
 	public abstract Double taxa();
 }

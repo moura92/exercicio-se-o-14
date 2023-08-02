@@ -1,10 +1,9 @@
 package entidades;
 
-public class ContribuinteEmpresa extends Contribuinte{
+public class ContribuinteEmpresa extends Contribuinte {
 
 	private Integer numeroempregados;
 
-	
 	public ContribuinteEmpresa() {
 		super();
 	}
@@ -25,6 +24,13 @@ public class ContribuinteEmpresa extends Contribuinte{
 	@Override
 	public Double taxa() {
 		// TODO Auto-generated method stub
-		return null;
+		double renda = 0;
+		if (numeroempregados >= 10) {
+			return renda = rendaanual * 0.14;
+		} else if (numeroempregados <= 10) {
+			return renda = rendaanual * 0.16;
+		}
+		return renda;
+
 	}
 }
